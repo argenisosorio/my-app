@@ -71,4 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Branches
 
-in the first-component branch we can test a first component in React.
+-In the first-component branch we can test a first component in React.
+
+-In the todo-list-example branch we can test a To Do list of task in React.
