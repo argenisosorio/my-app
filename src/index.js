@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from "./App";
-import { Table } from "./Table";
-import './main.css';
+import { App } from "./components/App";
+import { Table } from "./components/Table";
+import './css/main.css';
 
 ReactDOM.render(< App />, document.getElementById('root'));
 ReactDOM.render(< Table />, document.getElementById('table'));
