@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from "./components/App";
-import { Table } from "./components/Table";
+import { Name } from "./components/Name";
+import { Last_name } from "./components/Last_name";
 import './css/main.css';
 
-ReactDOM.render(< App />, document.getElementById('root'));
-ReactDOM.render(< Table />, document.getElementById('table'));
+ReactDOM.render(<Name name="Sarah" />, document.getElementById('name'));
+ReactDOM.render(<Last_name last_name="Connor" />, document.getElementById('last_name'));
