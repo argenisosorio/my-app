@@ -75,6 +75,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 -In the todo-list-example branch we can test a To Do list of task in React.
 
--In the two-components-example we can test a two components example.
+-In the two-components-example branch we can test a two components example.
+
+-In the another-single-components-example branch we can test another example of single components.
 
 -In the props branch we can test a two components example with props.
