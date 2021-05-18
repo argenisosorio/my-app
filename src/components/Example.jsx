@@ -1,24 +1,26 @@
 import React from 'react'
 
-function formatDate(date) {
-  return date.toLocaleDateString();
-}
+export class Example extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {isToggleOn: true};
 
-export function Example(props) {
-  return (
-    <div>
-      <div>
-        <img src={props.author.avatarUrl} alt={props.author.name} />
-        <div>
-          -Name: {props.author.name}
-        </div>
-      </div>
-      <div>
-        -Comment: {props.text}
-      </div>
-      <div>
-        -Date: {formatDate(props.date)}
-      </div>
-    </div>
-  );
+    // Este enlace es necesario para hacer que `this` funcione en el callback
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    // Se usa this.setState() para programar actualizaciones al estado local del componente.
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
+    }));
+  }
+
+  render() {
+    return (
+      <button onClick={this.handleClick}>
+        {this.state.isToggleOn ? 'ON' : 'OFF'}
+      </button>
+    );
+  }
 }
